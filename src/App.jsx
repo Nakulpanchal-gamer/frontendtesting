@@ -8,7 +8,7 @@ import { Login } from './components/layouts/Login'
 import axios from 'axios'
 import PrivateRoute from './hook/PrivateRoute'
 import { ToastContainer } from 'react-toastify';
-import  LandingPage from './components/layouts/LandingPage'
+import  LandingPage from './Landing/LandingPage'
 import { AddProduct } from './components/user/AddProduct'
 import { AddProduct2 } from './components/user/AddProducts'
 import { ResetPassword } from './components/layouts/resetpassword'
@@ -43,6 +43,7 @@ function App() {
       : "app-wraper"
     }>
       <Routes>
+
       <Route path="/" element ={<LandingPage/>}></Route>
         <Route path="" element={<PrivateRoute />}>
         <Route path="/user" element = { <UserNavbar/> }>
@@ -55,6 +56,7 @@ function App() {
         <Route path="/login" element = { <Login/> }></Route>
         <Route path="/Signup" element = { <Signup/> }></Route>
         <Route path="/resetpassword/:token" element={<ResetPassword/>}></Route>
+        
       </Routes>
       </div>
     </>
