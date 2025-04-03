@@ -38,7 +38,7 @@ function App() {
     <>
     <ToastContainer />
     <div className={
-      location.pathname === "/login" || location.patahname === "/signup" 
+      location.pathname === "/login" || location.pathname === "/signup" 
       ? "" 
       : "app-wraper"
     }>
