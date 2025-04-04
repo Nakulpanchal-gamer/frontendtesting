@@ -19,9 +19,9 @@ const LandingPage = () => (
       <Features />
       <WhyChoose />
       <Testimonials />
+      <HowItWorks />
       <LatestUpdates />
       <Footer />
-      <HowItWorks />
     </ThemeProvider>
   </div>
 );
